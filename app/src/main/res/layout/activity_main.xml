@@ -10,8 +10,6 @@
     app:circularflow_radiusInDP="45">
 
 
-
-
     <ProgressBar
         android:id="@+id/loading"
         android:layout_width="wrap_content"
