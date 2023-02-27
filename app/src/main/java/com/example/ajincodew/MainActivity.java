@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if(userExist(username.getText().toString(),password.getText().toString())==true) {
+                if(userIsExist(username.getText().toString(),password.getText().toString())==true) {
                     Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                     Bundle b = new Bundle();
                     b.putString("username", username.getText().toString());
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public boolean userExist(String username,String password){
+    public boolean userIsExist(String username,String password){
         try {
             AssetManager assetManager = getAssets();
             InputStream inputStream = assetManager.open("db.txt");
