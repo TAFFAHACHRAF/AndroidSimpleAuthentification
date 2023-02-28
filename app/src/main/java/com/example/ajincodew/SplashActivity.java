@@ -28,7 +28,7 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },9000);
+        },9050);
 
         /*Thread thread=new Thread(){
             @Override
