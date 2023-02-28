@@ -35,10 +35,14 @@ public class MainActivity2 extends AppCompatActivity {
         homme.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity2.this, MainActivity.class);
-                startActivity(intent);
+                retour(v);
             }
         });
+    }
+
+    public void retour(View view){
+        Intent intent=new Intent(MainActivity2.this, MainActivity.class);
+        startActivity(intent);
     }
 
 }

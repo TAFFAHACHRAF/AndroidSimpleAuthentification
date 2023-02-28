@@ -14,7 +14,13 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.splash_screen);
+
+        /*
+         * Le but de ce code est de rendre le GIF actif au démarrage de l'application.
+         * */
+
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -30,7 +36,10 @@ public class SplashActivity extends AppCompatActivity {
             }
         },9050);
 
-        /*Thread thread=new Thread(){
+    }
+
+    public void autreMethode(){
+        Thread thread=new Thread(){
             @Override
             public void run(){
                 Intent intent=new Intent(SplashActivity.this,MainActivity.class);
@@ -43,6 +52,6 @@ public class SplashActivity extends AppCompatActivity {
                 }
             }
         };
-        thread.start();*/
+        thread.start();
     }
 }

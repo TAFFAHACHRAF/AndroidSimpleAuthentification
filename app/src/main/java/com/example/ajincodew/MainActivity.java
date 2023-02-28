@@ -35,12 +35,7 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if(userIsExist(username.getText().toString(),password.getText().toString())==true) {
-                    Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-                    Bundle b = new Bundle();
-                    b.putString("username", username.getText().toString());
-                    b.putString("password", password.getText().toString());
-                    intent.putExtras(b);
-                    startActivity(intent);
+                    envoyer(v);
                 }
                 else{
                     Toast.makeText(MainActivity.this, "Login or password is not found", Toast.LENGTH_SHORT).show();
@@ -65,5 +60,14 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
         return false;
+    }
+
+    public void envoyer(View view){
+        Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+        Bundle b = new Bundle();
+        b.putString("username", username.getText().toString());
+        b.putString("password", password.getText().toString());
+        intent.putExtras(b);
+        startActivity(intent);
     }
 }
