@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aji ncodew</string>
+    <string name="email">البريد الإلكتروني : </string>
+    <string name="password">كلمة المرور : </string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="userInfo">معلومات حساب المستخدم</string>
+    <string name="homme">تسجيل خروج</string>
+</resources>
