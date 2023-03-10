@@ -99,6 +99,7 @@
         android:textColorLink="#7AA6E8"
         android:textStyle="bold"
         app:iconTint="#7AA6E8"
+        android:onClick="Signup"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -106,7 +107,8 @@
         app:layout_constraintTop_toBottomOf="@+id/passconf"
         app:layout_constraintVertical_bias="0.073"
         app:rippleColor="#7AA6E8"
-        app:strokeColor="#7AA6E8" />
+        app:strokeColor="#7AA6E8"
+        />
 
     <TextView
         android:id="@+id/textView3"

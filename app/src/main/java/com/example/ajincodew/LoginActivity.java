@@ -11,8 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-
-
 public class LoginActivity extends AppCompatActivity {
     private Button login;
     private EditText email;

@@ -31,19 +31,9 @@ public class SignUpActivity extends AppCompatActivity {
         this.password=findViewById(R.id.passLogin);
         this.passconfirm=findViewById(R.id.passconf);
 
-        save.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(SignUpActivity.this, "Welcome back!", Toast.LENGTH_SHORT).show();
-                saveUser();
-                /*Intent intent=new Intent(SignUpActivity.this,LoginActivity.class);
-                startActivity(intent);*/
-
-            }
-        });
     }
 
-    public void saveUser(){
+    public void Signup(){
         // Créer un objet SharedPreferences
             SharedPreferences sharedPreferences = getSharedPreferences("auth_preferences", MODE_PRIVATE);
 
@@ -57,5 +47,10 @@ public class SignUpActivity extends AppCompatActivity {
 
         // Enregistrer les modifications dans les préférences
         editor.apply();
-        }
+
+        // move into login activity
+
+        Intent  intent=new Intent(SignUpActivity.this,LoginActivity.class);
+        startActivity(intent);
+    }
 }
